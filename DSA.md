@@ -49,7 +49,13 @@ void insertionSort(vector<int>& arr) {
 
 
 ```
+<<<<<<< HEAD
 ![insertion sort ](animations/Insertion-sort-example.gif)
+=======
+![InsertionSort](Sorting/Animations/Insertion%20Sort.gif "Insertion Sort")
+
+
+>>>>>>> 99b166847f8ebfad3f36f9a0af9d4e466bbddbf2
 ### Merge Sort
 ```cpp
 void merge(vector<int>& arr, int l, int m, int r) {
