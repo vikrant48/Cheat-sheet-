@@ -14,6 +14,8 @@ void bubbleSort(vector<int>& arr) {
     }
 }
 ```
+![Bubble Sort Animation](animations/Bubble-sort-example-300px.gif)
+
 ### Selection Sort
 ```cpp
 void selectionSort(vector<int>& arr) {
@@ -29,6 +31,7 @@ void selectionSort(vector<int>& arr) {
 
 
 ```
+![selection sort](animations/Selection-Sort-Animation.gif)
 ### Insertion Sort
 ```cpp
 void insertionSort(vector<int>& arr) {
@@ -46,6 +49,7 @@ void insertionSort(vector<int>& arr) {
 
 
 ```
+![insertion sort ](animations/Insertion-sort-example.gif)
 ### Merge Sort
 ```cpp
 void merge(vector<int>& arr, int l, int m, int r) {
@@ -73,6 +77,7 @@ void mergeSort(vector<int>& arr, int l, int r) {
 
 
 ```
+![merge sort ](animations/Merge_sort_animation.gif)
 ### Quick Sort
 ```cpp
 int partition(vector<int>& arr, int low, int high) {
@@ -96,6 +101,7 @@ void quickSort(vector<int>& arr, int low, int high) {
 
 
 ```
+![quick sort ](animations/Quicksort-example.gif)
 ## 2. Searching Algorithms
 ### Linear Search
 ```cpp
