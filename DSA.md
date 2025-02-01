@@ -57,19 +57,37 @@ void insertionSort(vector<int>& arr) {
 
 ### Merge Sort
 ```cpp
-void merge(vector<int>& arr, int l, int m, int r) {
-    int n1 = m - l + 1, n2 = r - m;
-    vector<int> L(n1), R(n2);
-    for (int i = 0; i < n1; i++) L[i] = arr[l + i];
-    for (int i = 0; i < n2; i++) R[i] = arr[m + 1 + i];
-    
-    int i = 0, j = 0, k = l;
-    while (i < n1 && j < n2)
-        arr[k++] = (L[i] <= R[j]) ? L[i++] : R[j++];
-    
-    while (i < n1) arr[k++] = L[i++];
-    while (j < n2) arr[k++] = R[j++];
-}
+void merge(vector<int>& arr, int l, int mid, int r){
+        int indx1 = l;
+        int indx2 = mid +1;
+        
+        vector<int> temp;
+        
+        while(indx1<=mid && indx2<=r){
+            if(arr[indx1]<=arr[indx2]){
+                temp.push_back(arr[indx1]);
+                indx1++;
+            }
+            else{
+                temp.push_back(arr[indx2]);
+                indx2++;
+                
+            }
+        }
+        
+        while(indx1<=mid){
+            temp.push_back(arr[indx1]);
+            indx1++;
+        }
+        while(indx2<=r){
+            temp.push_back(arr[indx2]);
+            indx2++;
+        }
+        
+        for(int i=l; i<=r; i++){
+            arr[i]= temp[i-l];
+        }
+    }
 
 void mergeSort(vector<int>& arr, int l, int r) {
     if (l < r) {

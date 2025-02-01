@@ -167,3 +167,70 @@
    ```
 
 ---
+
+## Introduction to OOP
+- **Definition**: A programming paradigm that organizes code into modules, called objects or classes, which can be
+reused and combined in various ways.
+- **Key Idea**: Encapsulate data within objects, separating the public interface from internal details.
+
+---
+
+## Components of OOP
+
+### 1. Objects
+- **Concept**: An object is an instance of a class.
+- **Attributes/Properties**: Data stored within the object (e.g., color, year).
+- **Methods/Behaviors**: Operations performed on objects (e.g., print, move).
+
+**Example**: A user account in a banking system has attributes like balance and methods for depositing and
+withdrawing money.
+
+---
+
+### 2. Encapsulation
+- **Encapsulation**: Prevents direct access to internal state except through a public method.
+- **Access Control**: Data is locked away from external code (e.g., password manager).
+- **Hiding Details**: Data is not exposed, maintaining privacy.
+
+**Example**: A password manager protects user passwords from being accessed directly.
+
+---
+
+### 3. Inheritance
+- **Inheritance**: Subclassing allows one class to include the behaviors of another.
+- **Overloading Methods**: Shared methods (e.g., print) are defined in subclasses or interfaces.
+- **Code Redundancy**: One class handles attributes, others implement behaviors.
+
+**Example**: A base class Animal with a print method, and subclasses Dog and Cat that override the print method
+for specific actions.
+
+---
+
+### 4. Polymorphism
+- **Polymorphism**: Objects can adapt to various forms based on context.
+- **Adaptability**: An object's behavior is defined by multiple interfaces or implementations.
+- **Contextual Flexibility**: Allows different behaviors in similar situations.
+
+**Example**: Adding integers and doubles without checking their types, relying on polymorphism for flexibility.
+
+---
+
+## Applications and Benefits of OOP
+
+1. **Reusability**: Repeated structures can be encapsulated within a class.
+2. **Maintainability**: Clear separation of concerns through inheritance.
+3. **Problem Solving**: Abstraction allows focused attention on specific tasks without considering complexity.
+4. **Code Quality**: Hidden details reduce exposure and potential bugs.
+
+**Example**: Using Object-Oriented Design to design a library system, where books are objects, classes represent
+genres, authors, etc., facilitating easy maintenance and reuse of code.
+
+---
+
+## Summary
+Object-Oriented Programming (OOP) is a fundamental approach in software development that emphasizes data
+abstraction and object-oriented principles. By encapsulating data, promoting inheritance, and allowing
+polymorphism, OOP enhances code organization, maintainability, and functionality. Understanding these components
+provides a solid foundation for effective software design.
+
+---
