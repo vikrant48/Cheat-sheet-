@@ -74,7 +74,7 @@ void merge(vector<int>& arr, int l, int mid, int r){
                 
             }
         }
-        
+
         while(indx1<=mid){
             temp.push_back(arr[indx1]);
             indx1++;
@@ -103,15 +103,23 @@ void mergeSort(vector<int>& arr, int l, int r) {
 ![merge sort ](animations/Merge_sort_animation.gif)
 ### Quick Sort
 ```cpp
-int partition(vector<int>& arr, int low, int high) {
-    int pivot = arr[high];
-    int i = low - 1;
-    for (int j = low; j < high; j++) {
-        if (arr[j] < pivot)
-            swap(arr[++i], arr[j]);
+int partition(vector<int> &arr, int low, int high) {
+    int pivot = arr[low];
+    int i = low;
+    int j = high;
+
+    while (i < j) {
+        while (arr[i] <= pivot && i <= high - 1) {
+            i++;
+        }
+
+        while (arr[j] > pivot && j >= low + 1) {
+            j--;
+        }
+        if (i < j) swap(arr[i], arr[j]);
     }
-    swap(arr[i + 1], arr[high]);
-    return i + 1;
+    swap(arr[low], arr[j]);
+    return j;
 }
 
 void quickSort(vector<int>& arr, int low, int high) {
@@ -347,5 +355,25 @@ int maxSumSubarray(vector<int>& arr, int k) {
     }
     return maxSum;
 }
+
+```
+
+### left right shift 
+```cpp
+void leftRotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k % n;
+        reverse(nums.begin(), nums.begin() + k);
+        reverse(nums.begin() + k, nums.end());
+        reverse(nums.begin(), nums.end());
+    }
+
+    void rightRotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k % n;
+        reverse(nums.begin(), nums.end());
+        reverse(nums.begin(), nums.begin() + k);
+        reverse(nums.begin() + k, nums.end());
+    }
 
 ```
